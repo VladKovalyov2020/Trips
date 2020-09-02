@@ -1,0 +1,62 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/configs.scss';
+
+.our-photos {
+  background-color: $white;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 493px;
+
+    @media screen and (max-width: $breakpoint-down-xl) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 493px 1fr;
+    }
+
+    @media screen and (max-width: $breakpoint-down-md) {
+      grid-template-columns: 250px;
+      justify-content: center;
+    }
+  }
+
+  &__main-photo-wrapper {
+    @media screen and (max-width: $breakpoint-down-md) {
+      display: none;
+    }
+
+    img {
+      max-width: 739px;
+      min-height: 492px;
+      width: 100%;
+      border-radius: 4px;
+      box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.3);
+      margin: 0 auto;
+    }
+  }
+
+  &__preview-list {
+    overflow-y: scroll;
+
+    @media screen and (max-width: $breakpoint-down-xl) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-column-gap: 16px;
+      overflow-y: hidden;
+      overflow-x: scroll;
+    }
+
+    @media screen and (max-width: $breakpoint-down-lg) {
+      grid-column-gap: 0;
+    }
+
+    @media screen and (max-width: $breakpoint-down-md) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 180px);
+      overflow-x: hidden;
+      overflow-y: scroll;
+      text-align: center;
+    }
+  }
+}

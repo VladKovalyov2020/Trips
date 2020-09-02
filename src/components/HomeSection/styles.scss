@@ -1,0 +1,92 @@
+@import '../../styles/colors.scss';
+@import '../../styles/configs.scss';
+
+.home {
+  min-height: calc(100vh - 102px);
+  background-image: url('../../assets/images/hero_1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  &__title {
+    min-height: inherit;
+    max-width: 445px;
+    position: relative;
+    text-align: left;
+    color: $white;
+    z-index: 1;
+    margin-bottom: 16px;
+      
+
+    h1 {
+      font-size: 3rem;
+      line-height: 1;
+      font-weight: 900;
+      margin-bottom: 16px;
+      
+    }
+
+    p {
+      font-size: 0.9375rem;
+      line-height: 1.7;
+      //letter-spacing: 1px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    min-height: 60px;
+    max-width: 445px;
+    color: $white;
+
+    p {
+      font-size: 0.75rem;
+    }
+
+    .link__icon-wrapper {
+      width: 60px;
+      height: 60px;
+      align-items: center;
+      border: 1px solid $white;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      margin-right: 16px;
+      position: relative;
+     
+
+      &:hover {
+        background-color: $white;
+        color: $black;
+        transition: $anim-time ease;
+      }
+
+      .icon-wrapper__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: 2px;
+        
+      }
+    }
+  }
+}

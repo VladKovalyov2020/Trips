@@ -1,0 +1,107 @@
+@import '../../styles/colors.scss';
+@import '../../styles/configs.scss';
+
+.contact {
+  background-color: $white;
+  padding: 20px 0;
+
+  &__content {
+    min-height: 478px;
+
+    // @media screen and (max-width: $breakpoint-down-sm) {
+    //   min-height: 428px;
+    // }
+  }
+
+  &__copyright {
+    text-align: center;
+
+    p {
+      color: $grey-2;
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    //grid-column-gap: 24px;
+
+    @media screen and (max-width: $breakpoint-down-xl) {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 380px 1fr;
+    }
+
+    @media screen and (max-width: $breakpoint-down-md) {
+      grid-template-rows: 1fr 210px 1fr;
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+
+    .contact-info {
+      &__social-link {
+        display: grid;
+        grid-template-rows: 1fr 6fr;
+        grid-template-columns: 1fr;
+
+        @media screen and (max-width: $breakpoint-down-md) {
+          justify-items: center;
+        }
+
+        p {
+          padding-left: 8px;
+          margin-bottom: 16px;
+        }
+      }
+
+      &__quicks-link {
+        display: grid;
+        grid-template-rows: 38px 24px;
+        grid-template-columns: 1fr;
+        padding-left: 64px;
+
+        @media screen and (max-width: $breakpoint-down-lg) {
+          
+          padding-left: 0;
+        }
+        @media screen and (max-width: $breakpoint-down-md) {
+          justify-items: center;
+          
+        }  
+
+        a {
+          color: $brawn;
+          @media screen and (max-width: $breakpoint-down-md) {
+            padding-left: 32px;
+            
+          }  
+
+          &:hover {
+            color: $brawn-2;
+            text-decoration: none;
+            transition: $anim-time-fast ease;
+          }
+        }
+      }
+
+      &__letter-text {
+        display: grid;
+        grid-template-rows: 38px 1fr 1fr;
+        grid-template-columns: 1fr;
+
+        @media screen and (max-width: $breakpoint-down-md) {
+          grid-template-rows: 38px 90px 1fr;
+          justify-items: center;
+          text-align: center;
+        }
+
+       
+
+        p:nth-child(2) {
+          color: $grey-2;
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,65 @@
+@import '../../../styles/configs.scss';
+@import '../../../styles/colors.scss';
+
+.sidebar {
+  width: 320px;
+  display: none;
+  position: absolute;
+  top: 102px;
+  right: 0;
+  height: calc(100vh - 102px);
+  background-color: rgba(255, 255, 255, 1);
+  transform: translate(100%);
+  transition: transform $anim-time ease;
+  box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.2);
+  z-index: 155;
+  opacity: 0.8;
+
+  @media screen and (max-width: $breakpoint-up-md) {
+    display: block;
+    width: 280px;
+  }
+
+  @media screen and (max-width: $breakpoint-down-sm) {
+    width: 100%;
+  
+    position: absolute;
+  }
+
+  &--open {
+    transform: translateX(0);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list-item {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f1f1f1;
+    }
+
+    & > * {
+      &:first-child {
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+        color: $black;
+      }
+
+      &:last-child {
+        margin: 0 48px;
+      }
+    }
+  }
+}

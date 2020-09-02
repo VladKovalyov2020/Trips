@@ -1,0 +1,55 @@
+@import '../../styles/mixins';
+
+.field-label {
+  position: relative;
+  width: 100%;
+
+  &--with-error {
+    padding-bottom: 24px;
+  }
+
+  &__label {
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 100%;
+    position: absolute;
+    display: flex;
+    height: 24px;
+    left: 0;
+    top: -28px;
+    @include text-ellipsis;
+
+    .label {
+      line-height: 1.5;
+      font-size: 1rem;
+      color: #404040;
+    }
+
+    .sub-label {
+      line-height: 1.5;
+      font-size: 12px;
+      color: #707070;
+    }
+
+    &--block {
+      margin-bottom: 4px;
+      position: static;
+    }
+  }
+
+  &__des {
+    align-items: center;
+    max-width: 100%;
+    position: absolute;
+    display: flex;
+    height: 24px;
+    bottom: 0;
+    right: 0;
+
+    .error-text {
+      line-height: 1.5;
+      font-size: 12px;
+      color: #ff3e5f;
+    }
+  }
+}

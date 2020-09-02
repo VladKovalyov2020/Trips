@@ -1,0 +1,100 @@
+@import '../../styles/colors.scss';
+@import '../../styles/common.scss';
+@import '../../styles/configs.scss';
+
+.about {
+  
+  &__content {
+    min-height: 657px;
+    padding: 20px 0;
+    display: flex;
+
+    @media screen and (max-width: $breakpoint-down-xxl) {
+      min-height: 557px;
+    }
+
+    @media screen and (max-width: $breakpoint-down-sm) {
+      min-height: 457px;
+    }
+
+    @media screen and (max-width: $breakpoint-down-xl) {
+      min-height: 420px;
+      padding: 0;
+    }
+
+    @media screen and (max-width: $breakpoint-down-md) {
+      min-height: 360px;
+    }
+  }
+
+  &__wrapper {
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (max-width: $breakpoint-down-xl) {
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    
+    max-width: 270px;
+    font-size: 5rem;
+    
+    @media screen and (max-width: $breakpoint-down-xl) {
+      text-align: center;
+      margin: 0 auto 48px auto;
+    }
+
+    @media screen and (max-width: $breakpoint-down-lg) {
+      text-align: center;
+      margin: 0 auto 32px auto;
+    }
+
+    @media screen and (max-width: $breakpoint-down-md) {
+      text-align: center;
+      margin: 0 auto 24px auto;
+    }
+
+    @media screen and (max-width: $breakpoint-down-sm) {
+      text-align: center;
+      margin: 0 auto 20px auto;
+    }
+
+    p {
+      top: -35px;
+      
+      @media screen and (max-width: $breakpoint-down-xl) {
+        left: -70px;
+      }
+      @media screen and (max-width: $breakpoint-down-sm) {
+        top: -30px;
+      }
+    }
+  }
+
+  &__text {
+    p {
+      color: $grey-2;
+      margin-bottom: 16px;
+      z-index: 1;
+      position: relative;
+    }
+  }
+
+  &__picture {
+    img {
+      width: 100%;
+      max-width: 540px;
+
+      @media screen and (max-width: $breakpoint-down-xl) {
+        display: none;
+      }
+    }
+  }
+}

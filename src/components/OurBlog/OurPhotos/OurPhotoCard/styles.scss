@@ -1,0 +1,82 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/configs.scss';
+
+.preview-photo-card {
+  min-height: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 8px;
+  cursor: pointer;
+
+  @media screen and (max-width: $breakpoint-down-xl) {
+    grid-template-rows: 1fr 60px;
+    grid-template-columns: 250px;
+    grid-row-gap: 8px;
+  }
+
+  @media screen and (max-width: $breakpoint-down-lg) {
+    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 235px;
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+  }
+
+  &:hover {
+    background-color: rgba(152, 152, 152, 0.15);
+  }
+
+  &--active {
+    background-color: rgba(152, 152, 152, 0.15);
+  }
+
+  &__img-wrapper {
+    min-height: 118px;
+    max-width: 210px;
+    padding: 8px;
+
+    @media screen and (max-width: $breakpoint-down-xl) {
+      max-width: 250px;
+    }
+
+    @media screen and (max-width: $breakpoint-down-lg) {
+      max-width: 230px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 4px;
+    }
+  }
+
+  &__info {
+    font-size: 1.125rem;
+    color: $grey-2;
+    padding-top: 8px;
+
+    @media screen and (max-width: $breakpoint-down-xl) {
+      padding: 0 8px;
+    }
+
+    @media screen and (max-width: $breakpoint-down-lg) {
+      font-size: 0.9375rem;
+    }
+
+    p {
+      margin-bottom: 16px;
+
+      @media screen and (max-width: $breakpoint-down-xl) {
+        margin-bottom: 0;
+      }
+
+      @media screen and (max-width: $breakpoint-down-lg) {
+        margin-bottom: 0;
+      }
+    }
+
+    time {
+      font-size: 0.8125rem;
+    }
+  }
+}

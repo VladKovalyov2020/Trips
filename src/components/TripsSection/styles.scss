@@ -1,0 +1,38 @@
+@import '../../styles/colors.scss';
+@import '../../styles/common.scss';
+@import '../../styles/configs.scss';
+
+.trips {
+  padding: 20px 0;
+  width: 100%;
+
+  &__content {
+    min-height: 1281px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 5rem;
+
+    @media screen and (max-width: $breakpoint-down-md) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: $breakpoint-down-sm) {
+      margin-bottom: 32px;
+    }
+
+    P {
+      top: -35px;
+      left: -20px;
+
+      @media screen and (max-width: $breakpoint-down-sm) {
+        top: -28px;
+      }
+    }
+  }
+}

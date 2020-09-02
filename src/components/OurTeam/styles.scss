@@ -1,0 +1,45 @@
+@import '../../styles/colors.scss';
+@import '../../styles/configs.scss';
+
+.ourteam {
+  padding: 20px 0;  
+
+  &__content {
+    min-height: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  &__title {
+    text-align: center;
+    max-width: 427px;
+    min-height: 80px;
+    width: 100%;
+    font-size: 5rem;
+
+    @media screen and (max-width: $breakpoint-down-xl) {
+      margin-bottom: 48px;
+    }
+
+    @media screen and (max-width: $breakpoint-down-md) {
+      max-width: 374px;
+    }
+
+    @media screen and (max-width: $breakpoint-down-sm) {
+      max-width: 274px;
+      min-height: 77px;
+    }
+    
+    P {
+      top: -35px;
+
+      @media screen and (max-width: $breakpoint-down-sm) {
+        font-size: 3.669rem;
+        top: -16px;
+      }
+    }
+  }
+
+}

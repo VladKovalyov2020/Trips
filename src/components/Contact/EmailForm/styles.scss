@@ -1,0 +1,37 @@
+@import '../../../styles/configs.scss';
+@import '../../../styles/colors.scss';
+@import '../../../styles/mixins.scss';
+
+.login-form {
+    display: grid;
+    grid-template-columns: 1fr 110px;
+    grid-template-rows: 1fr;
+    grid-column-gap: 16px;
+
+    @media screen and (max-width: $breakpoint-down-md) {
+      grid-template-columns: 1fr ;
+      grid-template-rows: 1fr 55px;
+      justify-items: center;
+    }
+
+   &__fields-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 244px;
+   }
+  
+}
+.login__btn {
+  margin-top: 27px;
+
+  @media screen and (max-width: $breakpoint-down-md) {
+    margin-top: 0;
+    height: 36px;
+    padding: 0 16px;
+    font-size: 16px;
+    border-width: 2px;
+  }
+ 
+}
+

@@ -1,0 +1,70 @@
+@import '../../styles/configs.scss';
+@import '../../styles/colors.scss';
+
+.button {
+  border-style: solid;
+
+  &--fluid-width {
+    width: 100%;
+  }
+
+  &--size-xs {
+    height: 24px;
+    padding: 0 8px;
+    font-size: 14px;
+    border-width: 1px;
+  }
+
+  &--size-sm {
+    height: 30px;
+    padding: 0 16px;
+    font-size: 0.75rem;
+    border-width: 1px;
+  }
+
+  &--size-md {
+    height: 36px;
+    padding: 0 16px;
+    font-size: 16px;
+    border-width: 2px;
+  }
+
+  &--size-lg {
+    height: 48px;
+    padding: 0 24px;
+    font-size: 18px;
+    border-width: 2px;
+  }
+
+  &--variant-outlined {
+    &.button--color-brawn {
+      border-color: $brawn;
+    }
+
+    &.button--color-black {
+      border-color: $grey-4;
+    }
+  }
+
+  &--variant-contained {
+    &.button--color-brawn {
+      border-color: $brawn;
+      background-color: $brawn;
+      color: $white;
+      border-radius: 30px;
+      
+      &:hover {
+        
+        background: #f4ad2d;
+        transition: $anim-time ease;
+        text-decoration: none;
+      }
+    }
+
+    &.button--color-black {
+      border-color: $grey-4;
+      background-color: $grey-4;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+@import './../../../styles/colors.scss';
+@import '../../../styles/configs.scss';
+
+.posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 24px;
+  justify-items: center;
+  
+  
+
+  @media screen and (max-width: $breakpoint-down-lg) {
+    grid-template-columns: 1fr;
+    //justify-items: center;
+    
+  }
+  
+
+  .posts__item {
+    letter-spacing: 1.2;
+    
+    @media screen and (max-width: $breakpoint-down-md) {
+      justify-content: center;
+      
+      
+    }
+    
+    
+
+    .item__picture {
+      max-width: 355px;
+      margin-bottom: 16px;
+      margin: 0 auto;
+     
+      
+      @media screen and (max-width: $breakpoint-down-lg) {
+        margin-bottom: 10px;
+        
+      }
+
+      @media screen and (max-width: $breakpoint-down-sm) {
+        max-width: 248px;
+        
+      }
+
+      img {
+        max-width: 355px;
+        width: 100%;
+        box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        
+       }
+    }
+
+    .item__text {
+      max-width: 305px;
+      margin: 0 auto;
+      text-align: center;
+
+      a {
+        &:hover {
+          text-decoration: none;
+          color: $brawn;
+          transition: $anim-time-fast ease;
+        }
+
+        h4 {
+          color: $black;
+          font-size: 1.375rem;
+          font-weight: 400;
+          margin-bottom: 16px;
+
+          @media screen and (max-width: $breakpoint-down-lg) {
+            margin-bottom: 10px;
+            
+          }
+
+          &:hover {
+            color: $brawn;
+            text-decoration: none;
+            transition: $anim-time-fast ease;
+          }
+        }
+      }
+
+      p {
+        margin-bottom: 20px;
+
+        @media screen and (max-width: $breakpoint-down-lg) {
+          margin-bottom: 16px;
+          
+        }
+
+        time {
+          color: $grey-4;
+
+          span {
+            color: $brawn;
+
+            &:hover {
+              color: $brawn-2;
+              text-decoration: none;
+              transition: $anim-time-fast ease;
+            }
+          }
+        }
+      }
+
+      P {
+        color: $grey-2;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../styles/colors.scss';
+@import '../../styles/configs.scss';
+
+.navbar {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    margin-left: 36px;
+    color: $black;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover {
+      color: $brawn;
+      text-decoration: none;
+      transition: $anim-time-fast ease;
+    }
+
+    &:active {
+      color: $brawn;
+    }
+  }
+}

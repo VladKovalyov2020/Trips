@@ -1,0 +1,54 @@
+@import '../../styles/colors.scss';
+@import '../../styles/configs.scss';
+
+.blog {
+  padding: 20px 0;
+
+  &__content {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 150px;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 48px 0;
+
+    @media screen and (max-width: $breakpoint-down-lg) {
+      grid-template-rows: 120px;
+    }
+
+    @media screen and (max-width: $breakpoint-down-md) {
+      grid-template-rows: 100px;
+    }
+
+    @media screen and (max-width: $breakpoint-down-sm) {
+      grid-template-rows: 80px;
+    }
+  }
+
+  &__title {
+    max-width: 220px;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+
+    @media screen and (max-width: $breakpoint-down-md) {
+      max-width: 195px;
+    }
+
+    P {
+      top: -35px;
+
+      @media screen and (max-width: $breakpoint-down-lg) {
+        top: -33px;
+      }
+
+      @media screen and (max-width: $breakpoint-down-md) {
+        top: -32px;
+      }
+
+      @media screen and (max-width: $breakpoint-down-sm) {
+        top: -31px;
+      }
+    }
+  }
+}
