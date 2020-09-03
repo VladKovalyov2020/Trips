@@ -2,11 +2,10 @@ import React from 'react';
 
 // Modules
 
-import { FaTwitter, FaInstagram, FaFacebookF } from 'react-icons/fa';
+import types from 'prop-types';
 
 // Components
 
-//import { sliderList } from '../../../constans/landingPage';
 import { ReactIcon } from '../../ReactIcon';
 
 // Styles
@@ -51,4 +50,14 @@ export const OurTeamSliderCard = ({
       </div>
     </div>
   );
+};
+
+// Type of props
+
+OurTeamSliderCard.propTypes = {
+  image: types.string,
+  title: types.string,
+  subtitle: types.string,
+  text: types.string,
+  socialLink: types.array,
 };

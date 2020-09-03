@@ -41,8 +41,11 @@ export const OurPhotoCard = props => {
 // Type of props
 
 OurPhotoCard.propTypes = {
+  active: types.string.isRequired,
+  image: types.string.isRequired,
   date: types.string.isRequired,
   title: types.string.isRequired,
+  onClick: types.func,
 };
 
 // Default value for props

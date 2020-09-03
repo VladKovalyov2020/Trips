@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 //Modules
 
@@ -16,39 +16,6 @@ import './styles.scss';
 //------------
 
 export const AboutSection = () => {
-  // const [animation, setAnimation] = useState(false);
-
-  // useEffect(() => {
-  //   const element = document.getElementById('about-picture');
-
-  //   if (isInViewport(element)) {
-  //     setAnimation(true);
-  //   }
-
-  //   window.addEventListener('scroll', () => handlerScroll(element));
-  //   return () =>
-  //     window.removeEventListener('scroll', () => handlerScroll(element));
-  // }, []);
-
-  // function handlerScroll(element) {
-  //   if (isInViewport(element)) {
-  //     setAnimation(true);
-  //   } else {
-  //     setAnimation(false);
-  //   }
-  // }
-
-  // function isInViewport(element) {
-  //   const rect = element.getBoundingClientRect();
-  //   return (
-  //     rect.top >= 0 &&
-  //     rect.left >= 0 &&
-  //     rect.bottom <=
-  //       (window.innerHeight || document.documentElement.clientHeight) &&
-  //     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  //   );
-  // }
-
   return (
     <section id="about" className="about">
       <ContentWidthLimiter>
@@ -72,7 +39,7 @@ export const AboutSection = () => {
             </div>
           </div>
           <div className="about__picture">
-            <Fade left /*when={animation}*/>
+            <Fade left>
               <img src={picture} alt="traveler" />
             </Fade>
           </div>

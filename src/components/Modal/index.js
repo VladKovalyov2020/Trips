@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 // Modules
 
 import { createPortal } from 'react-dom';
+import types from 'prop-types';
 import classNames from 'classnames';
 
 // Components
@@ -31,12 +32,6 @@ export default function Modal({
     };
 
     document.addEventListener('keyPress', press);
-
-    // if (open) {
-    //   document.body.setAttribute('class', 'overflow-hidden');
-    // } else {
-    //   document.body.removeAttribute('class');
-    // }
 
     return () => {
       document.removeEventListener('keyPress', press);
@@ -76,3 +71,21 @@ export default function Modal({
     document.body
   );
 }
+
+// Type of props
+
+Modal.propTypes = {
+  bodyHeight: types.string,
+  noPadding: types.number,
+  closeIcon: types.bool,
+  children: types.node.isRequired,
+  onClose: types.func,
+  title: types.string,
+  open: types.bool,
+};
+
+// Default value for props
+
+Modal.defaultProps = {
+  width: 'sm',
+};

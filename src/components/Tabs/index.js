@@ -5,10 +5,6 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import types from 'prop-types';
 
-// Components
-
-//import { ReactIcon } from "../ReactIcon";
-
 // Styles
 
 import './styles.scss';
@@ -47,8 +43,6 @@ export const Tabs = props => {
                 key={link.name}
               >
                 <p>{link.title}</p>
-
-                {/* <ReactIcon size="lg">{link.icon()}</ReactIcon> */}
               </div>
             );
           })}

@@ -2,6 +2,7 @@ import React from 'react';
 
 // Modules
 
+import types from 'prop-types';
 import classnames from 'classnames';
 
 // Styles
@@ -60,3 +61,13 @@ export default function FieldLabel(props) {
     </div>
   );
 }
+
+// Type of props
+
+FieldLabel.propTypes = {
+  blockTitle: types.bool,
+  withError: types.bool,
+  subLabel: types.string,
+  children: types.node.isRequired,
+  label: types.string,
+};

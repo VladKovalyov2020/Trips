@@ -6,22 +6,20 @@
   justify-content: center;
   align-items: center;
   min-height: 470px;
-  padding-right: 48px;
-  padding-left: 48px;
+  padding: 0 48px;
   width: 100%;
   font-weight: 500;
   color: $grey-2;
   width: 100%;
   height: 100%;
-  
+
   @media screen and (max-width: $breakpoint-down-xl) {
     min-height: 430px;
   }
-  
+
   @media screen and (max-width: $breakpoint-down-xl) {
     flex-direction: column;
   }
-  
 
   &__image-wrapper {
     max-width: 360px;
@@ -30,16 +28,14 @@
     justify-content: space-between;
     align-items: center;
     margin: 6px;
-    
 
     @media screen and (max-width: $breakpoint-down-md) {
       max-width: 290px;
     }
-    
+
     @media screen and (max-width: $breakpoint-down-sm) {
       max-width: 250px;
     }
-    
 
     img {
       max-width: 360px;
@@ -59,7 +55,7 @@
   &__text-wrapper {
     max-width: 370px;
     width: 100%;
-    
+
     h3 {
       font-size: 1.375rem;
       color: $black-1;

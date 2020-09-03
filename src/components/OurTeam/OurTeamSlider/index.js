@@ -7,6 +7,7 @@ import { ReactIcon } from '../../ReactIcon';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import types from 'prop-types';
 
 //Components
 
@@ -79,3 +80,15 @@ export class OurTeamSlider extends React.Component {
     );
   }
 }
+
+// Type of props
+
+SampleNextArrow.propTypes = {
+  className: types.string,
+  onClick: types.func,
+};
+
+SamplePrevArrow.propTypes = {
+  className: types.string,
+  onClick: types.func,
+};

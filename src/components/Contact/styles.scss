@@ -6,11 +6,7 @@
   padding: 20px 0;
 
   &__content {
-    min-height: 478px;
-
-    // @media screen and (max-width: $breakpoint-down-sm) {
-    //   min-height: 428px;
-    // }
+    min-height: 478px;    
   }
 
   &__copyright {
@@ -25,8 +21,7 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    //grid-column-gap: 24px;
-
+    
     @media screen and (max-width: $breakpoint-down-xl) {
       grid-template-rows: 1fr 1fr;
       grid-template-columns: 380px 1fr;
@@ -94,8 +89,6 @@
           justify-items: center;
           text-align: center;
         }
-
-       
 
         p:nth-child(2) {
           color: $grey-2;

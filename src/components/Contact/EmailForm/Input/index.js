@@ -3,19 +3,11 @@ import React from 'react';
 // Modules
 
 import classNames from 'classnames';
+import types from 'prop-types';
 
 // Styles
 
 import './styles.scss';
-
-// ----------------
-
-// Default value for props
-
-Input.defaultProps = {
-  placeholder: 'Please enter',
-  type: 'text',
-};
 
 // ----------------
 
@@ -67,3 +59,24 @@ export default function Input(props) {
     </div>
   );
 }
+
+// Type of props
+
+Input.propTypes = {
+  placeholder: types.string,
+  className: types.string,
+  onChange: types.func,
+  onFocus: types.func,
+  onBlur: types.func,
+  error: types.string,
+  value: types.string,
+  name: types.string,
+  rest: types.string,
+};
+
+// Default value for props
+
+Input.defaultProps = {
+  placeholder: 'Please enter',
+  type: 'text',
+};

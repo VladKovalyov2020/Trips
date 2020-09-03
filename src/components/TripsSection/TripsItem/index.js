@@ -4,6 +4,10 @@ import React from 'react';
 
 import { Button } from '../../Button';
 
+// Modules
+
+import types from 'prop-types';
+
 // Styles
 
 import './styles.scss';
@@ -40,4 +44,10 @@ export const TripsItem = props => {
       })}
     </div>
   );
+};
+
+// Type of props
+
+TripsItem.propTypes = {
+  list: types.array.isRequired,
 };

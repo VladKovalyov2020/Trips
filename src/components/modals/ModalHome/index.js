@@ -24,7 +24,6 @@ export default function ModalHome(props) {
 
   return (
     <Modal open={open} onClose={onClose} title={title} width="md">
-      {/* <div className="test-modal">Test modal</div> */}
       <div className={nameClass}>
         <iframe
           allowFullScreen
@@ -42,7 +41,10 @@ export default function ModalHome(props) {
 // Type of props
 
 ModalHome.propTypes = {
+  open: types.bool,
+  onClose: types.func,
   title: types.string.isRequired,
+  src: types.string.isRequired,
 };
 
 // Default value for props

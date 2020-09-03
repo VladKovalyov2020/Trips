@@ -1,9 +1,5 @@
 import React from 'react';
 
-//Modules
-
-//import Fade from 'react-reveal/Fade';
-
 // Components
 
 import { ContentWidthLimiter } from '../ContentWidthLimiter';

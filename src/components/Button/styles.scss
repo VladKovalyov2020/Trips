@@ -55,7 +55,7 @@
       
       &:hover {
         
-        background: #f4ad2d;
+        background: $brawn-2;
         transition: $anim-time ease;
         text-decoration: none;
       }
@@ -64,7 +64,7 @@
     &.button--color-black {
       border-color: $grey-4;
       background-color: $grey-4;
-      color: #fff;
+      color: $white;
     }
   }
 }

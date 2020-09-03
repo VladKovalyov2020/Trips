@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 // Modules
 
+import types from 'prop-types';
 import { IoIosPlay } from 'react-icons/io';
 
 // Components
@@ -63,4 +64,10 @@ export const HomeSection = props => {
       )}
     </section>
   );
+};
+
+// Type of props
+
+HomeSection.propTypes = {
+  modalOpenHome: types.func,
 };

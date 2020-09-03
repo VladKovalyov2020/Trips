@@ -2,7 +2,7 @@ import React from 'react';
 
 //Modules
 
-// Components
+import types from 'prop-types';
 
 // Styles
 
@@ -26,4 +26,10 @@ export const ContactSocialFoto = props => {
       })}
     </div>
   );
+};
+
+// Type of props
+
+ContactSocialFoto.propTypes = {
+  list: types.array.isRequired,
 };

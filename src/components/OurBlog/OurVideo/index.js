@@ -36,6 +36,7 @@ export const OurVideo = props => {
 
 OurVideo.propTypes = {
   title: types.string.isRequired,
+  src: types.string.isRequired,
 };
 
 // Default value for props

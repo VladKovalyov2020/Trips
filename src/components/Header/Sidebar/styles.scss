@@ -12,18 +12,16 @@
   transform: translate(100%);
   transition: transform $anim-time ease;
   box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.2);
-  z-index: 155;
+  z-index: 1000155;
   opacity: 0.8;
-
+  
   @media screen and (max-width: $breakpoint-up-md) {
     display: block;
     width: 280px;
   }
 
   @media screen and (max-width: $breakpoint-down-sm) {
-    width: 100%;
-  
-    position: absolute;
+    width: 100%; 
   }
 
   &--open {

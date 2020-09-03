@@ -2,6 +2,7 @@ import React from 'react';
 
 // Modules
 
+import types from 'prop-types';
 import { IoMdCloseCircle } from 'react-icons/io';
 
 // Components
@@ -19,8 +20,6 @@ export default function ModalHeader(props) {
 
   return onClose || title ? (
     <div className="modal-header">
-      {/* {title && <p className="modal-header__title">{title}</p>} */}
-
       {onClose && (
         <ReactIcon
           className="modal-header__close-btn"
@@ -33,3 +32,10 @@ export default function ModalHeader(props) {
     </div>
   ) : null;
 }
+
+// Type of props
+
+ModalHeader.propTypes = {
+  onClose: types.func,
+  title: types.string,
+};

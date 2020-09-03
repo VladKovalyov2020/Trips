@@ -60,7 +60,6 @@ export default withFormik({
   mapPropsToValues: () => initialFormValues,
 
   validationSchema: Yup.object().shape({
-    password: Yup.string().required('Password is required'),
     email: Yup.string().email('Email not valid').required('Email is required'),
   }),
 

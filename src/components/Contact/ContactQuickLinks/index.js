@@ -2,10 +2,7 @@ import React from 'react';
 
 //Modules
 
-import classNames from 'classnames';
 import types from 'prop-types';
-
-// Components
 
 // Styles
 
@@ -28,6 +25,8 @@ export const ContactQuickLinks = props => {
     </div>
   );
 };
+
+// Type of props
 
 ContactQuickLinks.propTypes = {
   list: types.array.isRequired,

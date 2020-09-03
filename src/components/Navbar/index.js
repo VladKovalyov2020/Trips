@@ -3,6 +3,7 @@ import React from 'react';
 // Modules
 
 import { Link } from 'react-scroll';
+import types from 'prop-types';
 
 // Styles
 
@@ -36,4 +37,10 @@ export const Navbar = props => {
       })}
     </nav>
   );
+};
+
+// Type of props
+
+Navbar.propTypes = {
+  list: types.array.isRequired,
 };

@@ -1,5 +1,9 @@
 import React from 'react';
 
+// Modules
+
+import types from 'prop-types';
+
 // Styles
 
 import './style.scss';
@@ -42,4 +46,10 @@ export const OurPosts = props => {
       })}
     </div>
   );
+};
+
+// Type of props
+
+OurPosts.propTypes = {
+  list: types.array.isRequired,
 };
