@@ -1,12 +1,28 @@
-@import '../../styles/colors.scss';
-@import '../../styles/configs.scss';
+@import '../../styles/colors';
+@import '../../styles/configs';
 
 .contact {
   background-color: $white;
-  padding: 20px 0;
+  padding: 42px 0 20px;
+
+  @media screen and (max-width: $breakpoint-down-lg) {
+    padding: 20px 0 20px;
+  }
 
   &__content {
-    min-height: 478px;    
+    min-height: 310px;
+
+    @media screen and (max-width: $breakpoint-down-xl) {
+      min-height: 465px;
+    }
+
+    @media screen and (max-width: $breakpoint-down-md) {
+      min-height: 690px;
+    }
+
+    @media screen and (max-width: $breakpoint-down-sm) {
+      min-height: 690px;
+    }
   }
 
   &__copyright {
@@ -20,56 +36,91 @@
   &__info {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'social quicks letter';
+    margin-bottom: 32px;
+
     @media screen and (max-width: $breakpoint-down-xl) {
-      grid-template-rows: 1fr 1fr;
-      grid-template-columns: 380px 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: 300px 180px;
+      grid-template-areas:
+        'social quicks'
+        'letter letter';
+      justify-content: center;
+      margin-bottom: 0;
+    }
+
+    @media screen and (max-width: $breakpoint-down-lg) {
+      grid-template-rows: 1fr 195px 1fr;
+      grid-template-columns: 375px;
+      grid-row-gap: 10px;
+      grid-template-areas:
+        'social'
+        'quicks'
+        'letter';
+      justify-content: center;
+      margin-bottom: 20px;
     }
 
     @media screen and (max-width: $breakpoint-down-md) {
-      grid-template-rows: 1fr 210px 1fr;
-      grid-template-columns: 1fr;
-      justify-content: center;
+      grid-template-rows: 220px 180px 235px;
+      grid-row-gap: 0;
+    }
+
+    @media screen and (max-width: $breakpoint-down-sm) {
+      grid-template-columns: 305px;
     }
 
     .contact-info {
       &__social-link {
-        display: grid;
-        grid-template-rows: 1fr 6fr;
-        grid-template-columns: 1fr;
+        grid-area: social;
 
-        @media screen and (max-width: $breakpoint-down-md) {
-          justify-items: center;
+        @media screen and (max-width: $breakpoint-down-xl) {
+          margin-bottom: 16px;
+        }
+
+        @media screen and (max-width: $breakpoint-down-lg) {
+          margin: 0 auto;
         }
 
         p {
-          padding-left: 8px;
           margin-bottom: 16px;
+
+          @media screen and (max-width: $breakpoint-down-lg) {
+            text-align: center;
+            margin-bottom: 12px;
+          }
         }
       }
 
       &__quicks-link {
-        display: grid;
-        grid-template-rows: 38px 24px;
-        grid-template-columns: 1fr;
         padding-left: 64px;
+        grid-area: quicks;
+
+        @media screen and (max-width: $breakpoint-down-xl) {
+          padding-left: 32px;
+        }
 
         @media screen and (max-width: $breakpoint-down-lg) {
-          
+          margin: 0 auto;
           padding-left: 0;
         }
-        @media screen and (max-width: $breakpoint-down-md) {
-          justify-items: center;
-          
-        }  
+
+        p {
+          margin-bottom: 14px;
+
+          @media screen and (max-width: $breakpoint-down-lg) {
+            text-align: center;
+            margin-bottom: 12px;
+          }
+        }
 
         a {
           color: $brawn;
-          @media screen and (max-width: $breakpoint-down-md) {
-            padding-left: 32px;
-            
-          }  
+
+          @media screen and (max-width: $breakpoint-down-lg) {
+            text-align: center;
+          }
 
           &:hover {
             color: $brawn-2;
@@ -80,14 +131,18 @@
       }
 
       &__letter-text {
-        display: grid;
-        grid-template-rows: 38px 1fr 1fr;
-        grid-template-columns: 1fr;
+        grid-area: letter;
 
-        @media screen and (max-width: $breakpoint-down-md) {
-          grid-template-rows: 38px 90px 1fr;
-          justify-items: center;
+        @media screen and (max-width: $breakpoint-down-lg) {
           text-align: center;
+        }
+
+        p:nth-child(2) {
+          margin-top: 14px;
+
+          @media screen and (max-width: $breakpoint-down-lg) {
+            margin-top: 12px;
+          }
         }
 
         p:nth-child(2) {
@@ -97,4 +152,3 @@
     }
   }
 }
-

@@ -1,7 +1,13 @@
+@import '../../styles/configs';
+
 .content-limiter {
-  padding: 0 16px;
+  padding: 0 24px;
   margin: 0 auto;
   width: 100%;
+
+  @media screen and (max-width: $breakpoint-down-md) {
+    padding: 0 16px;
+  }
 
   &--width-sm {
     max-width: 1140px;

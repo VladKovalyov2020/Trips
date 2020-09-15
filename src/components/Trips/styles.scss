@@ -1,0 +1,32 @@
+@import '../../styles/colors';
+@import '../../styles/common';
+@import '../../styles/configs';
+
+.trips {
+  padding: 20px 0;
+
+  &__content {
+    min-height: 1150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__title {
+    text-align: center;
+    max-width: 395px;
+    min-height: 125px;
+    width: 100%;
+
+    @media screen and (max-width: $breakpoint-down-xl) {
+      margin-bottom: 10px;
+    }
+
+    P {
+      @media screen and (max-width: $breakpoint-down-md) {
+        top: 5px;
+      }
+    }
+  }
+}

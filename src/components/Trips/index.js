@@ -3,8 +3,10 @@ import React from 'react';
 // Components
 
 import { ContentWidthLimiter } from '../ContentWidthLimiter';
-import { TripsItem } from '../TripsSection/TripsItem';
+import { TripsItem } from './TripsItem';
 import { tripsList } from '../../constans/index';
+import { Title } from '../../components/Title';
+import { tripsTitleList } from '../../constans/index';
 
 // Styles
 
@@ -12,17 +14,12 @@ import './styles.scss';
 
 //------------
 
-export const TripsSection = () => {
+export const Trips = () => {
   return (
     <section id="trips" className="trips">
       <ContentWidthLimiter>
         <div className="trips__content" id="about-picture">
-          <div className="title trips__title">
-            <p>Journey</p>
-            <h3>Journey</h3>
-            <h2>Your Journey Starts Here</h2>
-          </div>
-
+          <Title className="trips__title" list={tripsTitleList} />
           <TripsItem list={tripsList} />
         </div>
       </ContentWidthLimiter>

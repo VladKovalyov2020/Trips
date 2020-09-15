@@ -8,6 +8,11 @@ import Fade from 'react-reveal/Fade';
 // Components
 
 import { ContentWidthLimiter } from '../ContentWidthLimiter';
+import { Title } from '../Title';
+
+// Constans
+
+import { aboutTitleList } from '../../constans/index';
 
 // Styles
 
@@ -15,17 +20,14 @@ import './styles.scss';
 
 //------------
 
-export const AboutSection = () => {
+export const About = () => {
   return (
     <section id="about" className="about">
       <ContentWidthLimiter>
         <div className="about__content" id="about-picture">
           <div className="about__wrapper">
-            <div className="title about__title">
-              <p>Story</p>
-              <h3>Discover story</h3>
-              <h2>Our Story</h2>
-            </div>
+            <Title className="about__title" list={aboutTitleList} />
+
             <div className="about__text">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi

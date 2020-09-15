@@ -1,5 +1,6 @@
 @import '../../styles/mixins';
-@import '../../styles/colors.scss';
+@import '../../styles/colors';
+@import '../../styles/configs';
 
 .field-label {
   position: relative;
@@ -7,6 +8,10 @@
 
   &--with-error {
     padding-bottom: 24px;
+
+    @media screen and (max-width: $breakpoint-down-md) {
+      padding-bottom: 10px;
+    }
   }
 
   &__label {

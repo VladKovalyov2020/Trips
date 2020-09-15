@@ -1,27 +1,37 @@
-@import '../../styles/colors.scss';
-@import '../../styles/configs.scss';
+@import '../../styles/colors';
+@import '../../styles/configs';
 
 .blog {
   padding: 20px 0;
-
+  
   &__content {
+    min-height: 750px;
     display: grid;
-    align-items: center;
+    align-items: flex-start;
     grid-template-rows: 150px;
     justify-items: center;
     margin: 0 auto;
-    padding: 48px 0;
+
+    @media screen and (max-width: $breakpoint-down-xl) {
+      min-height: 780px;
+    }
 
     @media screen and (max-width: $breakpoint-down-lg) {
-      grid-template-rows: 120px;
+      grid-template-rows: 140px;
+      min-height: 610px;
     }
 
     @media screen and (max-width: $breakpoint-down-md) {
-      grid-template-rows: 100px;
+      grid-template-rows: 130px;
+      min-height: 520px;
     }
 
     @media screen and (max-width: $breakpoint-down-sm) {
-      grid-template-rows: 80px;
+      min-height: 420px;
+    }
+
+    @media screen and (max-width: $breakpoint-down-xs) {
+      min-height: 400px;
     }
   }
 
@@ -36,18 +46,8 @@
     }
 
     P {
-      top: -35px;
-
       @media screen and (max-width: $breakpoint-down-lg) {
-        top: -33px;
-      }
-
-      @media screen and (max-width: $breakpoint-down-md) {
-        top: -32px;
-      }
-
-      @media screen and (max-width: $breakpoint-down-sm) {
-        top: -31px;
+        top: 5px;
       }
     }
   }

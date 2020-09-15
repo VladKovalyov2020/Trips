@@ -33,7 +33,7 @@ export const Sidebar = props => {
                 {item.name}
               </a>
 
-              <ReactIcon size="lg">{item.icon()}</ReactIcon>
+              <ReactIcon size="xl">{item.icon()}</ReactIcon>
             </div>
           );
         })}

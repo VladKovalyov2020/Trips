@@ -1,6 +1,6 @@
-@import '../../../../styles/configs.scss';
-@import '../../../../styles/colors.scss';
-@import '../../../../styles/mixins.scss';
+@import '../../../../styles/configs';
+@import '../../../../styles/colors';
+@import '../../../../styles/mixins';
 
 .input {
   position: relative;
@@ -18,7 +18,7 @@
     outline: none;
     border: 1px solid $white-2;
     color: $grey-5;
-    width: 244px;
+    width: 100%;
 
     &::placeholder {
       color: $grey-6;
@@ -37,7 +37,6 @@
     width: 48px;
     right: 0;
     top: 50%;
-
     @include center;
   }
 

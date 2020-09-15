@@ -1,5 +1,5 @@
-@import '../../../styles/configs.scss';
-@import '../../../styles/colors.scss';
+@import '../../../styles/configs';
+@import '../../../styles/colors';
 
 .sidebar {
   width: 320px;
@@ -7,21 +7,22 @@
   position: absolute;
   top: 102px;
   right: 0;
-  height: calc(100vh - 102px);
+  height: 100vh;
   background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
   transform: translate(100%);
   transition: transform $anim-time ease;
   box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.2);
-  z-index: 1000155;
+  z-index: 1000;
   opacity: 0.8;
-  
+
   @media screen and (max-width: $breakpoint-up-md) {
     display: block;
     width: 280px;
   }
 
   @media screen and (max-width: $breakpoint-down-sm) {
-    width: 100%; 
+    width: 100%;
   }
 
   &--open {
@@ -37,9 +38,8 @@
     height: 48px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 12px;
-
+    justify-content: flex-end;
+    flex-direction: row-reverse;
     border-radius: 4px;
     cursor: pointer;
 
@@ -49,14 +49,14 @@
 
     & > * {
       &:first-child {
-        font-size: 16px;
+        font-size: 1.25rem;
         font-weight: 400;
         text-decoration: none;
         color: $black;
       }
 
       &:last-child {
-        margin: 0 48px;
+        margin: 0 40px;
       }
     }
   }

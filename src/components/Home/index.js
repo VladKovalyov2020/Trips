@@ -17,7 +17,7 @@ import './styles.scss';
 
 //------------
 
-export const HomeSection = props => {
+export const Home = props => {
   const modalOpenHome = useState(false);
 
   function openModalHandler() {
@@ -68,6 +68,6 @@ export const HomeSection = props => {
 
 // Type of props
 
-HomeSection.propTypes = {
+Home.propTypes = {
   modalOpenHome: types.func,
 };

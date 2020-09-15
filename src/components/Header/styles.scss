@@ -1,11 +1,16 @@
-@import '../../styles/colors.scss';
-@import '../../styles/configs.scss';
+@import '../../styles/colors';
+@import '../../styles/configs';
 
 .header {
   background-color: $white;
   width: 100%;
   z-index: 10050;
-                   
+  position: fixed;
+  overflow: hidden;
+
+  @media screen and (max-width: $breakpoint-up-md) {
+    position: relative;
+  }
 
   &__content {
     min-height: 102px;
@@ -17,7 +22,7 @@
   &__nav-wrapper {
     display: flex;
     align-items: center;
-    
+
     .navbar {
       @media screen and (max-width: $breakpoint-up-md) {
         display: none;

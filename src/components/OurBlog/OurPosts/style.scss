@@ -1,56 +1,42 @@
-@import './../../../styles/colors.scss';
-@import '../../../styles/configs.scss';
+@import './../../../styles/colors';
+@import '../../../styles/configs';
 
 .posts {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-gap: 24px;
   justify-items: center;
-  
-  
 
   @media screen and (max-width: $breakpoint-down-lg) {
     grid-template-columns: 1fr;
-    //justify-items: center;
-    
   }
-  
 
   .posts__item {
     letter-spacing: 1.2;
-    
+
     @media screen and (max-width: $breakpoint-down-md) {
       justify-content: center;
-      
-      
     }
-    
-    
 
     .item__picture {
       max-width: 355px;
       margin-bottom: 16px;
-      margin: 0 auto;
-     
-      
+
       @media screen and (max-width: $breakpoint-down-lg) {
         margin-bottom: 10px;
-        
       }
 
       @media screen and (max-width: $breakpoint-down-sm) {
-        max-width: 248px;
-        
+        max-width: 348px;
       }
 
       img {
         max-width: 355px;
         width: 100%;
         box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
-        border-radius: 4px;
-        
-       }
+        border-radius: $border-radius;
+      }
     }
 
     .item__text {
@@ -73,7 +59,6 @@
 
           @media screen and (max-width: $breakpoint-down-lg) {
             margin-bottom: 10px;
-            
           }
 
           &:hover {
@@ -89,7 +74,6 @@
 
         @media screen and (max-width: $breakpoint-down-lg) {
           margin-bottom: 16px;
-          
         }
 
         time {

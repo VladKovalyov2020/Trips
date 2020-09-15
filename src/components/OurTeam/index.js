@@ -4,6 +4,8 @@ import React from 'react';
 
 import { ContentWidthLimiter } from '../ContentWidthLimiter';
 import { OurTeamSlider } from './OurTeamSlider';
+import { Title } from '../../components/Title';
+import { ourTeamTitleList } from '../../constans/index';
 
 // Styles
 
@@ -16,11 +18,7 @@ export const OurTeam = () => {
     <section id="ourteam" className="ourteam">
       <ContentWidthLimiter>
         <div className="ourteam__content">
-          <div className="title ourteam__title">
-            <p>Our Team</p>
-            <h3>Amazing Staff</h3>
-            <h2>Meet Our Team</h2>
-          </div>
+          <Title className="ourteam__title" list={ourTeamTitleList} />
           <OurTeamSlider />
         </div>
       </ContentWidthLimiter>

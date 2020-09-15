@@ -24,7 +24,7 @@ export const Navbar = props => {
             isDynamic={true}
             duration={500}
             smooth={true}
-            offset={-60}
+            offset={-102}
             spy={true}
             to={item.to}
             key={index}

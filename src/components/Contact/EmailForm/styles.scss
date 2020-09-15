@@ -1,26 +1,36 @@
-@import '../../../styles/configs.scss';
-@import '../../../styles/colors.scss';
-@import '../../../styles/mixins.scss';
+@import '../../../styles/configs';
+@import '../../../styles/colors';
+@import '../../../styles/mixins';
 
 .login-form {
-    display: grid;
-    grid-template-columns: 1fr 110px;
-    grid-template-rows: 1fr;
-    grid-column-gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr 110px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 16px;
+  margin-top: 16px;
 
-    @media screen and (max-width: $breakpoint-down-md) {
-      grid-template-columns: 1fr ;
-      grid-template-rows: 1fr 55px;
-      justify-items: center;
-    }
+  @media screen and (max-width: $breakpoint-down-xl) {
+    grid-template-columns: 250px 110px;
+    justify-content: center;
+  }
 
-   &__fields-wrapper {
+  @media screen and (max-width: $breakpoint-down-md) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 55px;
+    margin-top: 8px;
+    justify-items: center;
+  }
+
+  @media screen and (max-width: $breakpoint-down-sm) {
+    grid-template-rows: 1fr 40px;
+  }
+
+  &__fields-wrapper {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    width: 244px;
-   }
-  
+    width: 100%;
+  }
 }
 .login__btn {
   margin-top: 27px;
@@ -32,6 +42,8 @@
     font-size: 16px;
     border-width: 2px;
   }
- 
-}
 
+  @media screen and (max-width: $breakpoint-down-sm) {
+    margin-bottom: 0;
+  }
+}

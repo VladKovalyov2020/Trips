@@ -1,0 +1,77 @@
+@import '../../styles/colors';
+@import '../../styles/common';
+@import '../../styles/configs';
+
+.about {
+  &__content {
+    min-height: 600px;
+    padding: 20px 0;
+    display: flex;
+
+    @media screen and (max-width: $breakpoint-down-xxl) {
+      min-height: 557px;
+    }
+
+    @media screen and (max-width: $breakpoint-down-xl) {
+      min-height: 320px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: $breakpoint-down-lg) {
+      min-height: 310px;
+    }
+
+    @media screen and (max-width: $breakpoint-down-md) {
+      min-height: 305px;
+    }
+  }
+
+  &__wrapper {
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (max-width: $breakpoint-down-xl) {
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    max-width: 275px;
+    min-height: 125px;
+
+    @media screen and (max-width: $breakpoint-down-xl) {
+      margin: 0 auto;
+    }
+
+    p {
+      @media screen and (max-width: $breakpoint-down-md) {
+        top: 5px;
+      }
+    }
+  }
+
+  &__text {
+    p {
+      color: $grey-2;
+      margin-bottom: 16px;
+      z-index: 1;
+      position: relative;
+    }
+  }
+
+  &__picture {
+    img {
+      width: 100%;
+      max-width: 540px;
+
+      @media screen and (max-width: $breakpoint-down-xl) {
+        display: none;
+      }
+    }
+  }
+}

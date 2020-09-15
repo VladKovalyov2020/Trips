@@ -1,6 +1,28 @@
-@import "../../styles/colors.scss";
+@import '../../styles/colors';
+@import '../../styles/configs';
 
 .landing {
   position: relative;
   background-color: $white;
+  overflow: hidden;
+
+  &__button-up {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+
+    @media screen and (max-width: $breakpoint-down-lg) {
+      right: 20px;
+      bottom: 20px;
+    }
+
+    @media screen and (max-width: $breakpoint-down-md) {
+      right: 15px;
+      bottom: 15px;
+    }
+    @media screen and (max-width: $breakpoint-down-sm) {
+      right: 15px;
+      bottom: 50px;
+    }
+  }
 }

@@ -1,9 +1,9 @@
-@import '../../../styles/colors.scss';
+@import '../../../styles/colors';
 
 .contact-social {
   display: grid;
-  grid-template-columns: 80px 80px 80px;
-  grid-template-rows: 80px 80px;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(2, 80px);
   grid-gap: 16px;
 
   &__image-wrapper {

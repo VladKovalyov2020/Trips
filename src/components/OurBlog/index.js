@@ -9,6 +9,8 @@ import React from 'react';
 
 import { ContentWidthLimiter } from '../../components/ContentWidthLimiter';
 import { Tabs } from '../Tabs';
+import { Title } from '../../components/Title';
+import { blogTitleList } from '../../constans/index';
 import { OurPosts } from '../../components/OurBlog/OurPosts';
 import { OurVideo } from '../../components/OurBlog/OurVideo';
 import { OurPhotosCard } from '../../components/OurBlog/OurPhotos';
@@ -59,16 +61,12 @@ export const OurBlog = () => {
     <section id="blog" className="blog">
       <ContentWidthLimiter>
         <div className="blog__content">
-          <div className="title blog__title">
-            <p>Blog</p>
-            <h3>Updates</h3>
-            <h2>Our Blog</h2>
-          </div>
+          <Title className="blog__title" list={blogTitleList} />
           <Tabs
             defaultTab={tabsLinks[0].name}
             content={tabsContent}
             links={tabsLinks}
-          />{' '}
+          />
         </div>
       </ContentWidthLimiter>
     </section>

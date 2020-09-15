@@ -1,47 +1,46 @@
-@import "../../styles/colors.scss";
-@import "../../styles/mixins.scss";
+@import '../../styles/colors';
+@import '../../styles/mixins';
 
 .react-icon {
   @include center;
 
   > svg {
-		vertical-align: middle;
-	}
+    vertical-align: middle;
+  }
 
-	&--size-xs {
-		font-size: 10px;
-	}
+  &--size-xs {
+    font-size: 10px;
+  }
 
-	&--size-sm {
-		font-size: 12px;
-	}
+  &--size-sm {
+    font-size: 12px;
+  }
 
-	&--size-md {
-		font-size: 16px;
-	}
+  &--size-md {
+    font-size: 16px;
+  }
 
-	&--size-lg {
-		font-size: 20px;
-	}
+  &--size-lg {
+    font-size: 20px;
+  }
 
-	&--size-xl {
-		font-size: 24px;
-	}
+  &--size-xl {
+    font-size: 24px;
+  }
 
-	&--size-xxl {
-		font-size: 32px;
-	}
+  &--size-xxl {
+    font-size: 32px;
+  }
 
-	&--size-xxxl {
-		font-size: 40px;
-	}
+  &--size-xxxl {
+    font-size: 40px;
+  }
 
-	&--size-xxxxl {
-		font-size: 60px;
-	}
+  &--size-xxxxl {
+    font-size: 60px;
+  }
 
-	&--color-black {
-		color: $black;
-	}
+  &--color-black {
+    color: $black;
+  }
 }
-

@@ -1,5 +1,5 @@
-@import '../../../styles/configs.scss';
-@import '../../../styles/colors.scss';
+@import '../../../styles/configs';
+@import '../../../styles/colors';
 
 .our-team-slider {
   display: flex;
@@ -9,12 +9,15 @@
   padding-bottom: 48px;
   max-width: 900px;
   width: 100%;
-  
+
+  @media screen and (max-width: $breakpoint-down-xxl) {
+    max-width: 100%;
+  }
+
   @media screen and (max-width: $breakpoint-down-xl) {
-    max-width: 800px;
     min-height: 470px;
   }
-  
+
   &__slide {
     outline: none;
   }
@@ -29,19 +32,15 @@
     top: 45%;
     z-index: 1;
 
-       
     &:hover {
       background-color: $grey-1;
       color: $black-1;
       transition: $anim-time ease;
       border-radius: 5px;
     }
-    
-    
+
     &.slick-prev {
       left: 5px;
-
-      
 
       &:before {
         display: none;
@@ -49,7 +48,7 @@
 
       .react-icon {
         font-size: 46px;
-      }      
+      }
     }
 
     &.slick-next {
@@ -64,7 +63,6 @@
       }
     }
   }
-  
 
   .slick-dots {
     position: absolute;
@@ -75,8 +73,6 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
-
-    
 
     li {
       list-style: none;
@@ -116,4 +112,3 @@
     }
   }
 }
- 

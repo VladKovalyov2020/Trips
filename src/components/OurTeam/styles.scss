@@ -1,45 +1,55 @@
-@import '../../styles/colors.scss';
-@import '../../styles/configs.scss';
+@import '../../styles/colors';
+@import '../../styles/configs';
 
 .ourteam {
-  padding: 20px 0;  
+  padding: 20px 0;
 
   &__content {
-    min-height: 660px;
+    min-height: 640px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    @media screen and (max-width: $breakpoint-down-md) {
+      min-height: 710px;
+    }
   }
-  
+
   &__title {
+    width: 430px;
     text-align: center;
-    max-width: 427px;
-    min-height: 80px;
-    width: 100%;
-    font-size: 5rem;
 
     @media screen and (max-width: $breakpoint-down-xl) {
-      margin-bottom: 48px;
+      margin-bottom: 10px;
     }
 
     @media screen and (max-width: $breakpoint-down-md) {
       max-width: 374px;
+      margin-bottom: 0;
     }
 
     @media screen and (max-width: $breakpoint-down-sm) {
       max-width: 274px;
       min-height: 77px;
+      margin-bottom: 0;
+      padding-top: 24px;
     }
-    
+
+    h2 {
+      @media screen and (max-width: $breakpoint-down-sm) {
+        font-size: 1.25rem;
+      }
+    }
+
     P {
-      top: -35px;
+      @media screen and (max-width: $breakpoint-down-md) {
+        top: 5px;
+      }
 
       @media screen and (max-width: $breakpoint-down-sm) {
-        font-size: 3.669rem;
-        top: -16px;
+        font-size: 3.66rem;
       }
     }
   }
-
 }

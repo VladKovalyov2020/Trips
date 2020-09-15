@@ -29,6 +29,38 @@ export const sidebarList = [
   { name: 'Contact', to: 'contact', icon: () => <RiContactsBookLine /> },
 ];
 
+export const aboutTitleList = [
+  {
+    title: 'Our Story',
+    subtitle: 'Discover story',
+    text: 'Story',
+  },
+];
+
+export const tripsTitleList = [
+  {
+    title: 'Your Journey Starts Here',
+    subtitle: 'Journey',
+    text: 'Journey',
+  },
+];
+
+export const ourTeamTitleList = [
+  {
+    title: 'Meet Our Team',
+    subtitle: 'Amazing Staff',
+    text: 'Our Team',
+  },
+];
+
+export const blogTitleList = [
+  {
+    title: 'Our Blog',
+    subtitle: 'Updates',
+    text: 'Blog',
+  },
+];
+
 export const tripsList = [
   {
     price: '200.00',

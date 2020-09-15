@@ -1,17 +1,17 @@
-@import '../../styles/colors.scss';
-@import '../../styles/configs.scss';
+@import '../../styles/colors';
+@import '../../styles/configs';
 
 .home {
-  min-height: calc(100vh - 102px);
+  min-height: 100vh;
   background-image: url('../../assets/images/hero_1.jpg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 100% 35%;
   background-size: cover;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%; 
+  width: 100%;
 
   &::before {
     content: '';
@@ -31,20 +31,17 @@
     color: $white;
     z-index: 1;
     margin-bottom: 16px;
-      
 
     h1 {
       font-size: 3rem;
       line-height: 1;
       font-weight: 900;
       margin-bottom: 16px;
-      
     }
 
     p {
       font-size: 0.9375rem;
       line-height: 1.7;
-      //letter-spacing: 1px;
     }
   }
 
@@ -70,7 +67,6 @@
       background: rgba(255, 255, 255, 0.1);
       margin-right: 16px;
       position: relative;
-     
 
       &:hover {
         background-color: $white;
@@ -84,7 +80,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
         margin-left: 2px;
-        
       }
     }
   }

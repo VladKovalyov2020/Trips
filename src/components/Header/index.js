@@ -11,7 +11,6 @@ import { Logo } from '../Logo';
 import { Navbar } from '../Navbar';
 import { HamburgerButton } from './HamburgerButton';
 import { Sidebar } from './Sidebar';
-//import { ReactIcon } from '../../components/ReactIcon';
 
 // Constans
 

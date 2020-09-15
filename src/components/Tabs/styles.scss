@@ -1,5 +1,5 @@
-@import '../../styles/configs.scss';
-@import '../../styles/colors.scss';
+@import '../../styles/configs';
+@import '../../styles/colors';
 
 .tabs {
   max-width: 1108px;
@@ -38,22 +38,20 @@
       margin-top: 7px;
       z-index: 1;
       position: relative;
+      text-align: center;
+      color: $brawn-2;
+      font-weight: 700;
     }
 
     &:before {
       display: none;
       content: '';
       position: absolute;
-      height: 3px;
       width: 100%;
-      background-color: $grey-3;
+      background-color: $grey-2;
       left: 0;
       bottom: -1px;
-
-      @media screen and (max-width: $breakpoint-down-md) {
-        height: 100%;
-        background-color: $grey-4;
-      }
+      height: 100%;
     }
 
     &--active {

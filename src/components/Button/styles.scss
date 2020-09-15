@@ -1,5 +1,5 @@
-@import '../../styles/configs.scss';
-@import '../../styles/colors.scss';
+@import '../../styles/configs';
+@import '../../styles/colors';
 
 .button {
   border-style: solid;
@@ -52,9 +52,8 @@
       background-color: $brawn;
       color: $white;
       border-radius: 30px;
-      
+
       &:hover {
-        
         background: $brawn-2;
         transition: $anim-time ease;
         text-decoration: none;
