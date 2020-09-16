@@ -5,7 +5,7 @@ import React from 'react';
 import { ContentWidthLimiter } from '../ContentWidthLimiter';
 import { OurTeamSlider } from './OurTeamSlider';
 import { Title } from '../../components/Title';
-import { ourTeamTitleList } from '../../constans/index';
+import { ourTeamTitleList } from '../../constants/index';
 
 // Styles
 

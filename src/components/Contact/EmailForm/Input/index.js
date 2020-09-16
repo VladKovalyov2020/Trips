@@ -11,7 +11,7 @@ import './styles.scss';
 
 // ----------------
 
-export default function Input(props) {
+export const Input = props => {
   const {
     placeholder,
     rightBlock,
@@ -58,7 +58,7 @@ export default function Input(props) {
       {rightBlock && <div className={rightBlockClass}>{rightBlock}</div>}
     </div>
   );
-}
+};
 
 // Type of props
 

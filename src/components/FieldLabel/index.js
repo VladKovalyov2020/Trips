@@ -11,16 +11,7 @@ import './styles.scss';
 
 // ----------------
 
-// Default value for props
-
-FieldLabel.defaultProps = {
-  withError: true,
-  status: {},
-};
-
-// ----------------
-
-export default function FieldLabel(props) {
+export const FieldLabel = props => {
   const {
     blockTitle,
     withError,
@@ -60,7 +51,7 @@ export default function FieldLabel(props) {
       )}
     </div>
   );
-}
+};
 
 // Type of props
 
@@ -70,4 +61,11 @@ FieldLabel.propTypes = {
   subLabel: types.string,
   children: types.node.isRequired,
   label: types.string,
+};
+
+// Default value for props
+
+FieldLabel.defaultProps = {
+  withError: true,
+  status: {},
 };

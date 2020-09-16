@@ -4,9 +4,9 @@ import React from 'react';
 
 import { ContentWidthLimiter } from '../ContentWidthLimiter';
 import { TripsItem } from './TripsItem';
-import { tripsList } from '../../constans/index';
+import { tripsList } from '../../constants/index';
 import { Title } from '../../components/Title';
-import { tripsTitleList } from '../../constans/index';
+import { tripsTitleList } from '../../constants/index';
 
 // Styles
 

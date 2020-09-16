@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 
 // Components
 
-//import { ContentWidthLimiter } from '../../../components/ContentWidthLimiter';
 import { OurPhotoCard } from './OurPhotoCard';
 
 // Constants
 
-import { ourPhotosList } from '../../../constans/index';
+import { ourPhotosList } from '../../../constants/index';
 
 // Styles
 

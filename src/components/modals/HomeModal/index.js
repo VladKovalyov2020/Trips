@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 // Components
 
-import Modal from '../../Modal';
+import { Modal } from '../../Modal';
 
 // Modules
 
@@ -15,7 +15,7 @@ import './styles.scss';
 
 // ----------------
 
-export default function ModalHome(props) {
+export const HomeModal = props => {
   const { open, onClose, title, src } = props;
 
   const nameClass = classNames({
@@ -36,12 +36,12 @@ export default function ModalHome(props) {
       </div>
     </Modal>
   );
-}
+};
 
 // Type of props
 
-ModalHome.propTypes = {
-  open: types.bool,
+HomeModal.propTypes = {
+  open: types.func,
   onClose: types.func,
   title: types.string.isRequired,
   src: types.string.isRequired,
@@ -49,7 +49,7 @@ ModalHome.propTypes = {
 
 // Default value for props
 
-ModalHome.defaultProps = {
+HomeModal.defaultProps = {
   title: 'Video',
   src: 'https://www.youtube.com/embed/DAtvupNKzEU',
 };

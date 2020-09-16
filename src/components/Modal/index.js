@@ -8,7 +8,7 @@ import classNames from 'classnames';
 
 // Components
 
-import ModalHeader from './ModalHeader';
+import { ModalHeader } from './ModalHeader';
 
 // Styles
 
@@ -16,16 +16,18 @@ import './styles.scss';
 
 // ----------------
 
-export default function Modal({
-  bodyHeight,
-  noPadding,
-  closeIcon = true,
-  children,
-  onClose,
-  width = 'sm',
-  title,
-  open,
-}) {
+export const Modal = props => {
+  const {
+    bodyHeight,
+    noPadding,
+    closeIcon = true,
+    children,
+    onClose,
+    width = 'sm',
+    title,
+    open,
+  } = props;
+
   useEffect(() => {
     const press = () => {
       console.log('keyPress');
@@ -70,7 +72,7 @@ export default function Modal({
     ) : null,
     document.body
   );
-}
+};
 
 // Type of props
 
@@ -81,7 +83,7 @@ Modal.propTypes = {
   children: types.node.isRequired,
   onClose: types.func,
   title: types.string,
-  open: types.bool,
+  open: types.func,
 };
 
 // Default value for props

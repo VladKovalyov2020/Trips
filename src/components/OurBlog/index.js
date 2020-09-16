@@ -1,21 +1,16 @@
 import React from 'react';
 
-// Modules
-
-// import { FaUtensils } from 'react-icons/fa';
-// import { GiSandwich, GiFoodChain, GiSpottedArrowhead } from 'react-icons/gi';
-
 // Components
 
 import { ContentWidthLimiter } from '../../components/ContentWidthLimiter';
 import { Tabs } from '../Tabs';
 import { Title } from '../../components/Title';
-import { blogTitleList } from '../../constans/index';
+import { blogTitleList } from '../../constants/index';
 import { OurPosts } from '../../components/OurBlog/OurPosts';
 import { OurVideo } from '../../components/OurBlog/OurVideo';
 import { OurPhotosCard } from '../../components/OurBlog/OurPhotos';
-import { ourPhotosList } from '../../constans/index';
-import { ourPostsList } from '../../constans/index';
+import { ourPhotosList } from '../../constants/index';
+import { ourPostsList } from '../../constants/index';
 
 // Styles
 

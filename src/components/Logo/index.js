@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Modules
+// Assets
 
 import logo from '../../assets/images/logo.png';
 

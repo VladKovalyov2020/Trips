@@ -25,9 +25,9 @@ export const Navbar = props => {
             duration={500}
             smooth={true}
             offset={-102}
-            spy={true}
             to={item.to}
             key={index}
+            spy={true}
           >
             <span key={index} href={`#${item.to}`} className="navbar__item">
               {item.name}

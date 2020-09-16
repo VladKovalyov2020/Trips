@@ -11,7 +11,7 @@ import types from 'prop-types';
 
 //Components
 
-import { sliderList } from '../../../constans/index';
+import { sliderList } from '../../../constants/index';
 import { OurTeamSliderCard } from '../OurTeamSliderCard';
 
 // Styles

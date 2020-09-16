@@ -3,11 +3,11 @@ import React from 'react';
 // Components
 
 import { ContentWidthLimiter } from '../ContentWidthLimiter';
-import { contactFotoList } from '../../constans/index';
+import { contactFotoList } from '../../constants/index';
 import { ContactSocialFoto } from './ContactSocialFoto';
-import { quickLinksList } from '../../constans/index';
+import { quickLinksList } from '../../constants/index';
 import { ContactQuickLinks } from '../../components/Contact/ContactQuickLinks';
-import EmailForm from '../../components/Contact/EmailForm';
+import { EmailForm } from '../../components/Contact/EmailForm';
 
 // Styles
 

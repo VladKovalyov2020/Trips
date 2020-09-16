@@ -1,6 +1,7 @@
 import React from 'react';
 
 // Modules
+
 import classNames from 'classnames';
 import types from 'prop-types';
 
@@ -13,12 +14,9 @@ import './styles.scss';
 export const Title = props => {
   const { list, className } = props;
 
-   const titleClass = classNames(
-    'title',
-    className
-  );
+  const titleClass = classNames('title', className);
 
-return (
+  return (
     <>
       {list.map((item, index) => {
         return (

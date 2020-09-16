@@ -15,7 +15,7 @@ import './styles.scss';
 
 // ----------------
 
-export default function ModalHeader(props) {
+export const ModalHeader = props => {
   const { onClose, title } = props;
 
   return onClose || title ? (
@@ -31,7 +31,7 @@ export default function ModalHeader(props) {
       )}
     </div>
   ) : null;
-}
+};
 
 // Type of props
 

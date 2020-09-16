@@ -14,7 +14,7 @@ import { Sidebar } from './Sidebar';
 
 // Constans
 
-import { navbarList, sidebarList } from '../../constans';
+import { navbarList, sidebarList } from '../../constants/index';
 
 // Styles
 
@@ -52,7 +52,11 @@ export const Header = () => {
           </div>
         </ContentWidthLimiter>
       </header>
-      <Sidebar isOpen={isSidebarShow} list={sidebarList} />
+      <Sidebar
+        isOpen={isSidebarShow}
+        list={sidebarList}
+        handleClick={toggleHandler}
+      />
     </>
   );
 };

@@ -7,9 +7,9 @@ import * as Yup from 'yup';
 
 // Components
 
-import FieldLabel from '../../../components/FieldLabel';
+import { FieldLabel } from '../../../components/FieldLabel';
 import { Button } from '../../../components/Button';
-import Input from '../../../components/Contact/EmailForm/Input';
+import { Input } from '../../../components/Contact/EmailForm/Input';
 
 // Styles
 
@@ -24,7 +24,7 @@ const initialFormValues = {
 
 // ----------------
 
-function EmailForm(props) {
+export const EmailForm = props => {
   const {} = props;
 
   const touched = false;
@@ -39,7 +39,7 @@ function EmailForm(props) {
           label="Email"
           status={{ error: touched && !!error, des: error }}
         >
-          <Input placeholder="Please enter email" type="text" />
+          <Input placeholder="Please enter email" type="text" name="test" />
         </FieldLabel>
       </div>
 
@@ -54,7 +54,7 @@ function EmailForm(props) {
       </Button>
     </form>
   );
-}
+};
 
 export default withFormik({
   mapPropsToValues: () => initialFormValues,

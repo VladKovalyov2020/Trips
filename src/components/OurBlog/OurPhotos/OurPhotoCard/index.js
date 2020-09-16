@@ -5,10 +5,6 @@ import React from 'react';
 import classNames from 'classnames';
 import types from 'prop-types';
 
-// Components
-
-// import components
-
 // Styles
 
 import './styles.scss';
@@ -41,7 +37,7 @@ export const OurPhotoCard = props => {
 // Type of props
 
 OurPhotoCard.propTypes = {
-  active: types.string.isRequired,
+  active: types.bool.isRequired,
   image: types.string.isRequired,
   date: types.string.isRequired,
   title: types.string.isRequired,

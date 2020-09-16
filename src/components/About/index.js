@@ -2,7 +2,6 @@ import React from 'react';
 
 //Modules
 
-import picture from '../../assets/images/traveler.jpg';
 import Fade from 'react-reveal/Fade';
 
 // Components
@@ -12,7 +11,11 @@ import { Title } from '../Title';
 
 // Constans
 
-import { aboutTitleList } from '../../constans/index';
+import { aboutTitleList } from '../../constants/index';
+
+// Assets
+
+import picture from '../../assets/images/traveler.jpg';
 
 // Styles
 

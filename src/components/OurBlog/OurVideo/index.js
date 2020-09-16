@@ -21,11 +21,11 @@ export const OurVideo = props => {
   return (
     <div className={nameClass}>
       <iframe
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        type="text/html"
         allowFullScreen
         frameBorder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         title={title}
-        type="text/html"
         src={src}
       />
     </div>

@@ -2,16 +2,12 @@
 @import '../../styles/configs';
 
 .home {
-  min-height: 100vh;
   background-image: url('../../assets/images/hero_1.jpg');
   background-repeat: no-repeat;
   background-position: 100% 35%;
   background-size: cover;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
+  min-height: 100vh;
 
   &::before {
     content: '';
@@ -23,8 +19,19 @@
     background: rgba(0, 0, 0, 0.3);
   }
 
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 350px;
+
+    @media screen and (max-width: $breakpoint-down-sm) {
+      padding-top: 300px;
+    }
+  }
+
   &__title {
-    min-height: inherit;
     max-width: 445px;
     position: relative;
     text-align: left;

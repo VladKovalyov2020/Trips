@@ -14,13 +14,9 @@ import './styles.scss';
 
 // ----------------
 
-export const OurTeamSliderCard = ({
-  image,
-  title,
-  subtitle,
-  text,
-  socialLink,
-}) => {
+export const OurTeamSliderCard = props => {
+  const { image, title, subtitle, text, socialLink } = props;
+
   return (
     <div className="our-team-card">
       <div className="our-team-card__image-wrapper">
@@ -34,7 +30,7 @@ export const OurTeamSliderCard = ({
           {socialLink &&
             socialLink.map((link, index) => (
               <a
-                href={`${link.to}`}
+                href={link.to}
                 target="_blank"
                 rel="noopener noreferrer"
                 key={index}

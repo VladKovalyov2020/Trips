@@ -23,6 +23,10 @@
       margin-bottom: 10px;
     }
 
+    @media screen and (max-width: $breakpoint-down-sm) {
+      margin-bottom: 0;
+    }
+
     P {
       @media screen and (max-width: $breakpoint-down-md) {
         top: 5px;

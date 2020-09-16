@@ -2,6 +2,7 @@ import React from 'react';
 
 // Modules
 
+import { Link } from 'react-scroll';
 import classNames from 'classnames';
 import types from 'prop-types';
 
@@ -16,7 +17,7 @@ import './styles.scss';
 // ------------------
 
 export const Sidebar = props => {
-  const { isOpen, list } = props;
+  const { isOpen, list, handleClick } = props;
 
   const sidebarClass = classNames({
     sidebar: true,
@@ -28,13 +29,23 @@ export const Sidebar = props => {
       <div className="sidebar__list">
         {list.map((item, index) => {
           return (
-            <div key={index} className="sidebar__list-item">
-              <a href={`#${item.to}`} key={index}>
+            <Link
+              activeClass="sidebar__item--active"
+              className="sidebar__item"
+              onClick={handleClick}
+              isDynamic={true}
+              duration={500}
+              smooth={true}
+              to={item.to}
+              key={index}
+              spy={true}
+              offset={0}
+            >
+              <div key={index} className="sidebar__list-item">
                 {item.name}
-              </a>
-
-              <ReactIcon size="xl">{item.icon()}</ReactIcon>
-            </div>
+                <ReactIcon size="xl">{item.icon()}</ReactIcon>
+              </div>
+            </Link>
           );
         })}
       </div>
