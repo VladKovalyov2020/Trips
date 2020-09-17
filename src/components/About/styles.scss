@@ -9,11 +9,11 @@
     display: flex;
 
     @media screen and (max-width: $breakpoint-down-xxl) {
-      min-height: 557px;
+      min-height: 527px;
     }
 
     @media screen and (max-width: $breakpoint-down-xl) {
-      min-height: 320px;
+      min-height: 290px;
       text-align: center;
     }
 
